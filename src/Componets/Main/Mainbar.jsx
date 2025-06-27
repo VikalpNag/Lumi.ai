@@ -1,9 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { assets } from "../../assets/assets.js";
 import "./Mainbar.css";
 import { Context } from "../../context/context.jsx";
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 
 const Mainbar = () => {
+  const [show, setShow] = useState(true);
+  const [menu, showMenu] = useState(true);
   const {
     onSent,
     recentPrompt,
@@ -18,7 +23,14 @@ const Mainbar = () => {
     <div className="main">
       <div className="nav">
         <p>Lumi.ai</p>
-        <img src={assets.user_icon} alt="" />
+        <div className="icons">
+          {show ? (
+            <DarkModeOutlinedIcon onClick={() => setShow(false)} />
+          ) : (
+            <LightModeOutlinedIcon onClick={() => setShow(true)} />
+          )}
+          {menu ? <MenuRoundedIcon /> : <></>}
+        </div>
       </div>
       <div className="main-container">
         <div className="greet">

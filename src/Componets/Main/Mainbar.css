@@ -17,11 +17,10 @@
   cursor: pointer;
 }
 
-.main .nav img {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  cursor: pointer;
+.main .nav .icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 .main-container {
@@ -47,12 +46,12 @@
   display: flex;
   justify-content: space-between;
   height: 100px;
-  width: 800px;
+  width: 700px;
   align-items: center;
   gap: 10px;
   background-color: #ffffff;
   padding: 10px 20px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 20px;
   margin-bottom: 10px;
 }
