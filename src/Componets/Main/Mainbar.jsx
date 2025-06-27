@@ -21,14 +21,28 @@ const Mainbar = () => {
         <img src={assets.user_icon} alt="" />
       </div>
       <div className="main-container">
+        <div className="greet">
+          <p>
+            <span>What can I help you?</span>
+          </p>
+        </div>
+        <div className="search-box">
+          <input
+            onChange={(e) => setInput(e.target.value)}
+            value={input}
+            type="text"
+            placeholder="Enter a Prompt here"
+          />
+          <div className="icon">
+            <img
+              onClick={() => onSent(input)}
+              src={assets.send_icon}
+              alt="send"
+            />
+          </div>
+        </div>
         {!showResult ? (
-          <>
-            <div className="greet">
-              <p>
-                <span>What can I help you?</span>
-              </p>
-            </div>
-          </>
+          <></>
         ) : (
           <div className="result">
             <div className="result-title">
@@ -51,23 +65,6 @@ const Mainbar = () => {
         )}
 
         <div className="main-bottom">
-          <div className="search-box">
-            <input
-              onChange={(e) => setInput(e.target.value)}
-              value={input}
-              type="text"
-              placeholder="Enter a Prompt here"
-            />
-            <div className="icon">
-              <img src={assets.gallery_icon} alt="gallery" />
-              <img src={assets.mic_icon} alt="mic" />
-              <img
-                onClick={() => onSent(input)}
-                src={assets.send_icon}
-                alt="send"
-              />
-            </div>
-          </div>
           <div className="bottom-info">
             <p>Lumi.ai can make mistakes,so double check it.</p>
           </div>
