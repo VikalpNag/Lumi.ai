@@ -17,7 +17,7 @@ const Mainbar = () => {
   return (
     <div className="main">
       <div className="nav">
-        <p>ChatAi</p>
+        <p>Lumi.ai</p>
         <img src={assets.user_icon} alt="" />
       </div>
       <div className="main-container">
@@ -69,7 +69,7 @@ const Mainbar = () => {
             </div>
           </div>
           <div className="bottom-info">
-            <p>ChatAi can make mistakes,so double check it.</p>
+            <p>Lumi.ai can make mistakes,so double check it.</p>
           </div>
         </div>
       </div>

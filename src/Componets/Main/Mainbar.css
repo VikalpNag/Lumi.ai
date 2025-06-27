@@ -13,6 +13,7 @@
 
 .main .nav p {
   font-size: 20px;
+  font-weight: 900;
   cursor: pointer;
 }
 
@@ -34,12 +35,12 @@
 .main .greet {
   margin: 50px 0px;
   color: #c4c7c5;
-  font-weight: 500;
+  font-weight: 900;
   padding: 20px;
 }
 
 .main .greet span {
-  font-size: 36px;
+  font-size: 86px;
   background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

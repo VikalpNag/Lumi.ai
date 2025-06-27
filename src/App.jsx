@@ -5,7 +5,7 @@ import Mainbar from "./Componets/Main/Mainbar";
 const App = () => {
   return (
     <>
-      <Sidebar />
+      {/* <Sidebar /> */}
       <Mainbar />
     </>
   );
