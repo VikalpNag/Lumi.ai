@@ -6,6 +6,7 @@ import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import GrainIcon from "@mui/icons-material/Grain";
 
 const Mainbar = () => {
   const [show, setShow] = useState(true);
@@ -72,17 +73,12 @@ const Mainbar = () => {
         ) : (
           <div className="result">
             <div className="result-title">
-              <img src={assets.user_icon} alt="" />
+              <GrainIcon />
               <p>{recentPrompt}</p>
             </div>
             <div className="result-data">
-              <img src={assets.gemini_icon} alt="" />
               {loading ? (
-                <div className="loader">
-                  <hr />
-                  <hr />
-                  <hr />
-                </div>
+                <div class="loader"></div>
               ) : (
                 <p dangerouslySetInnerHTML={{ __html: resultData }}></p>
               )}
@@ -92,7 +88,7 @@ const Mainbar = () => {
 
         <div className="main-bottom">
           <div className="bottom-info">
-            <p>Lumi.ai can make mistakes,so double check it.</p>
+            <p>Lumi.ai Designed and Developer by Vikalp</p>
           </div>
         </div>
       </div>
