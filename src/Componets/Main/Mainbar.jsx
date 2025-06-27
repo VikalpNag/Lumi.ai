@@ -3,12 +3,13 @@ import { assets } from "../../assets/assets.js";
 import "./Mainbar.css";
 import { Context } from "../../context/context.jsx";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 
 const Mainbar = () => {
   const [show, setShow] = useState(true);
-  const [menu, showMenu] = useState(true);
+  const [menu, setMenu] = useState(true);
   const {
     onSent,
     recentPrompt,
@@ -29,9 +30,22 @@ const Mainbar = () => {
           ) : (
             <LightModeOutlinedIcon onClick={() => setShow(true)} />
           )}
-          {menu ? <MenuRoundedIcon /> : <></>}
+          {menu ? (
+            <CloseRoundedIcon onClick={() => setMenu(false)} />
+          ) : (
+            <MenuRoundedIcon onClick={() => setMenu(true)} />
+          )}
+          {menu && (
+            <div className="dropdown-menu">
+              <ul>
+                <li>Login</li>
+                <li>Help</li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
+
       <div className="main-container">
         <div className="greet">
           <p>
