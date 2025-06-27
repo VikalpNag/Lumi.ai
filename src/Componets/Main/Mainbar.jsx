@@ -25,7 +25,7 @@ const Mainbar = () => {
           <>
             <div className="greet">
               <p>
-                <span>Hello, Vikalp</span>
+                <span>What can I help you?</span>
               </p>
             </div>
           </>
