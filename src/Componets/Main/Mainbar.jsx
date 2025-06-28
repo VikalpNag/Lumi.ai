@@ -10,7 +10,7 @@ import GrainIcon from "@mui/icons-material/Grain";
 
 const Mainbar = () => {
   const [show, setShow] = useState(true);
-  const [menu, setMenu] = useState(true);
+  const [menu, setMenu] = useState(false);
   const {
     onSent,
     recentPrompt,
