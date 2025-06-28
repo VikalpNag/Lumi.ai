@@ -1,3 +1,5 @@
+"use client";
+import useMousePosition from "../../utils/useMousePosition.js";
 import React, { useContext, useState } from "react";
 import { assets } from "../../assets/assets.js";
 import "./Mainbar.css";
@@ -7,8 +9,10 @@ import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import GrainIcon from "@mui/icons-material/Grain";
+import { motion } from "framer-motion";
 
 const Mainbar = () => {
+  const { x, y } = useMousePosition();
   const [show, setShow] = useState(true);
   const [menu, setMenu] = useState(false);
   const {
@@ -53,6 +57,11 @@ const Mainbar = () => {
             <span>What can I help you?</span>
           </p>
         </div>
+        <motion.div
+          className="circle"
+          animate={{ x, y }}
+          transition={{ type: "spring", stiffness: 100, damping: 20 }}
+        ></motion.div>
         <div className="search-box">
           <input
             onChange={(e) => setInput(e.target.value)}

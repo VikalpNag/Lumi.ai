@@ -5,6 +5,20 @@
   position: relative;
 }
 
+.circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(#00000077, #e2e2e249);
+  backdrop-filter: blur(20px);
+  pointer-events: none;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+}
+
 .main .nav {
   margin: 20px;
   display: flex;
