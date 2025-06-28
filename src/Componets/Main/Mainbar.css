@@ -107,7 +107,7 @@
 .search-box .icon img {
   &:hover {
     background-color: #c4c7c5;
-    border-radius: 50%;
+    border-radius: 30%;
   }
 }
 
@@ -130,18 +130,14 @@
 
 .result {
   padding: 0px 5%;
-  max-height: 70vh;
-  overflow-y: scroll;
-}
-
-.result::-webkit-scrollbar {
-  /* display: ruby-base; */
+  max-height: auto;
+  overflow-y: inherit;
 }
 
 .result-title {
   margin: 40px 0px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
 }
 
