@@ -29,6 +29,7 @@
   font-size: 20px;
   font-weight: 900;
   cursor: pointer;
+  font-family: "Lobster Two", sans-serif;
 }
 
 .main .nav .icons {
@@ -77,6 +78,7 @@
 .main .greet {
   margin: 40px 0px;
   font-weight: 900;
+  font-family: "Lobster Two", sans-serif;
 }
 
 .main .greet span {
@@ -135,6 +137,7 @@
 }
 
 .bottom-info {
+  font-family: "Lobster Two", sans-serif;
   font-size: 15px;
   display: flex;
   justify-content: center;
@@ -153,6 +156,7 @@
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 .result img {
@@ -164,6 +168,7 @@
   display: flex;
   align-items: start;
   gap: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 /* HTML: <div class="loader"></div> */
