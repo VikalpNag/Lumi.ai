@@ -29,7 +29,7 @@ const ContextProvider = (props) => {
 
     let finalPrompt = prompt !== undefined ? prompt : input;
 
-    setPrevPrompts((prev) => [...prev, finalPrompt]); // ✅ Always update prevPrompts
+    setPrevPrompts((prev) => [...prev, finalPrompt]);
     setRecentPrompt(finalPrompt);
 
     let response = await run(finalPrompt);
