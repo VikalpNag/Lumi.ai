@@ -10,6 +10,7 @@ import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import GrainIcon from "@mui/icons-material/Grain";
 import { motion } from "framer-motion";
+import Suggestions from "./Suggestions.jsx";
 
 const Mainbar = () => {
   const { x, y } = useMousePosition();
@@ -78,7 +79,7 @@ const Mainbar = () => {
           </div>
         </div>
         {!showResult ? (
-          <></>
+          <Suggestions />
         ) : (
           <div className="result">
             <div className="result-title">

@@ -5,9 +5,8 @@ import question_icon from "./question_icon.png";
 import setting_icon from "./setting_icon.png";
 import bulb_icon from "./bulb_icon.png";
 import compass_icon from "./compass_icon.png";
+import bulb from './bulb.png'
 
-
-import user_icon from "./user_icon.png";
 import youtube_icon from "./youtube_icon.png";
 import message_icon from "./message_icon.png";
 import code_icon from "./code_icon.png";
@@ -20,11 +19,9 @@ export const assets = {
   plus_icon,
   question_icon,
   setting_icon,
+  bulb,
   bulb_icon,
   compass_icon,
-
-
-  user_icon,
   youtube_icon,
   message_icon,
   code_icon,

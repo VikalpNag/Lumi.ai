@@ -1,0 +1,35 @@
+.suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  height: 10vh;
+  width: 100%;
+  padding: 0 50px 0 50px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+  &:hover {
+    scale: 1.05;
+    transition: ease 0.4s;
+    cursor: pointer;
+  }
+}
+
+.card p {
+  font-family: "Lobster Two", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+  color: #000;
+}
+
+.card img {
+  height: 50px;
+  width: 50px;
+}
